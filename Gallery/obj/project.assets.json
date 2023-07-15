@@ -1,0 +1,204 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0-windows7.0": {
+      "MainFrame/0.3.13": {
+        "type": "package",
+        "compile": {
+          "lib/net45/MainFrame.Core.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net45/MainFrame.Core.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "MainFrame.Core/0.3.21": {
+        "type": "package",
+        "compile": {
+          "lib/net45/MainFrame.Core.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net45/MainFrame.Core.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "MainFrame.Desktop/0.3.21": {
+        "type": "package",
+        "dependencies": {
+          "MainFrame.Core": "0.3.21"
+        },
+        "compile": {
+          "lib/net45/MainFrame.Desktop.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net45/MainFrame.Desktop.dll": {
+            "related": ".pdb"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MainFrame/0.3.13": {
+      "sha512": "HaV/U5Y45mkAN8eInEFmdcW+juEzli8dBkPN+92fzWb8f+aKSJ8Frs5CQmqRjfdElo/+sg4rVHoGnV3ZKFfDFg==",
+      "type": "package",
+      "path": "mainframe/0.3.13",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/MainFrame.Core.dll",
+        "lib/net45/MainFrame.Core.pdb",
+        "mainframe.0.3.13.nupkg.sha512",
+        "mainframe.nuspec"
+      ]
+    },
+    "MainFrame.Core/0.3.21": {
+      "sha512": "eoGPOL04RmpWmiu5Y6Gzs8rKIHSaeT8aJIRer11rotBJ1w2EL8YdCDR/1UPT1Shmoa/tovg09dM/pvWo4p/E9w==",
+      "type": "package",
+      "path": "mainframe.core/0.3.21",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/MainFrame.Core.dll",
+        "lib/net45/MainFrame.Core.pdb",
+        "mainframe.core.0.3.21.nupkg.sha512",
+        "mainframe.core.nuspec"
+      ]
+    },
+    "MainFrame.Desktop/0.3.21": {
+      "sha512": "jHGPCCxB1l5+p7HJJSf5EalmMsjvvbP0BpCDNH1u41nxVm/NA6ZJMCfP0qyGmiztyqm3NFcXAYZpaHgblhDF+Q==",
+      "type": "package",
+      "path": "mainframe.desktop/0.3.21",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/MainFrame.Desktop.dll",
+        "lib/net45/MainFrame.Desktop.pdb",
+        "mainframe.desktop.0.3.21.nupkg.sha512",
+        "mainframe.desktop.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0-windows7.0": [
+      "MainFrame.Desktop >= 0.3.21",
+      "Mainframe >= 0.3.13"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Asus\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Asus\\source\\repos\\Gallery\\Gallery\\Gallery.csproj",
+      "projectName": "Gallery",
+      "projectPath": "C:\\Users\\Asus\\source\\repos\\Gallery\\Gallery\\Gallery.csproj",
+      "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Asus\\source\\repos\\Gallery\\Gallery\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0-windows"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0-windows7.0": {
+        "targetAlias": "net6.0-windows",
+        "dependencies": {
+          "MainFrame.Desktop": {
+            "target": "Package",
+            "version": "[0.3.21, )"
+          },
+          "Mainframe": {
+            "target": "Package",
+            "version": "[0.3.13, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WPF": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"MainFrame 0.3.13\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net6.0-windows7.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "MainFrame",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"MainFrame.Core 0.3.21\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net6.0-windows7.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "MainFrame.Core",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"MainFrame.Desktop 0.3.21\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net6.0-windows7.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "MainFrame.Desktop",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
+}
